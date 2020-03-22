@@ -854,6 +854,7 @@ namespace ScreenToGif.Model
 
                 using (var resultStream = response.GetResponseStream())
                 {
+                    return true;//None check new version
                     if (resultStream == null)
                         return false;
 
@@ -919,6 +920,7 @@ namespace ScreenToGif.Model
 
                         using (var ms = new MemoryStream(Encoding.UTF8.GetBytes(result)))
                         {
+                            return;//None check new version
                             var ser = new DataContractJsonSerializer(typeof(FosshubResponse));
                             var obj = ser.ReadObject(ms) as FosshubResponse;
 
