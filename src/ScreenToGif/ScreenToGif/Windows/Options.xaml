@@ -251,11 +251,11 @@
                                 </WrapPanel>
 
                                 <WrapPanel Margin="10,0,5,0">
-                                    <n:ExtendedCheckBox Text="{DynamicResource S.Options.App.General.CheckForTranslationUpdates}" Margin="5,3" VerticalAlignment="Top" IsChecked="{Binding Path=CheckForTranslationUpdates, Mode=TwoWay}"/>
-                                    <TextBlock Text="{DynamicResource S.Options.App.General.CheckForTranslationUpdates.Info}" Padding="0" Margin="5,0,0,0" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="{DynamicResource Element.Foreground.Gray150}"/>
+                                    <n:ExtendedCheckBox Text="{DynamicResource S.Options.App.General.CheckForTranslationUpdates}" Margin="5,3" VerticalAlignment="Top" IsChecked="{Binding Path=CheckForTranslationUpdates, Mode=TwoWay}" Visibility="Hidden"/>
+                                    <TextBlock Text="{DynamicResource S.Options.App.General.CheckForTranslationUpdates.Info}" Padding="0" Margin="5,0,0,0" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="{DynamicResource Element.Foreground.Gray150}" Visibility="Hidden"/>
                                 </WrapPanel>
 
-                                <n:ExtendedCheckBox x:Name="UpdatesCheckBox" Text="{DynamicResource S.Options.App.General.CheckForUpdates}" Margin="15,3,5,3" IsChecked="{Binding Path=CheckForUpdates, Mode=TwoWay}"/>
+                                <n:ExtendedCheckBox x:Name="UpdatesCheckBox" Text="{DynamicResource S.Options.App.General.CheckForUpdates}" Margin="15,3,5,3" IsChecked="{Binding Path=CheckForUpdates, Mode=TwoWay}" Visibility="Hidden"/>
                                 <StackPanel Visibility="{Binding CheckForUpdates, Converter={StaticResource Bool2Visibility}}">
                                     <n:ExtendedCheckBox Text="{DynamicResource S.Options.App.General.UpdateOnClose}" Margin="30,3,5,3" IsChecked="{Binding Path=InstallUpdates, Mode=TwoWay}"/>
                                     <n:ExtendedCheckBox Text="{DynamicResource S.Options.App.General.PromptToInstall}" Margin="45,3,5,3" IsChecked="{Binding Path=PromptToInstall, Mode=TwoWay}"

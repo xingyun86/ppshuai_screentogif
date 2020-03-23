@@ -58,10 +58,10 @@
     <s:Boolean x:Key="NotifyWhileClosingApp">True</s:Boolean>
     <s:Boolean x:Key="DrawOutlineOutside">True</s:Boolean>
     <s:Boolean x:Key="DisableHardwareAcceleration">False</s:Boolean>
-    <s:Boolean x:Key="CheckForTranslationUpdates">True</s:Boolean>
-    <s:Boolean x:Key="CheckForUpdates">True</s:Boolean>
-    <s:Boolean x:Key="InstallUpdates">True</s:Boolean>
-    <s:Boolean x:Key="PromptToInstall">True</s:Boolean>
+    <s:Boolean x:Key="CheckForTranslationUpdates">False</s:Boolean>
+    <s:Boolean x:Key="CheckForUpdates">False</s:Boolean>
+    <s:Boolean x:Key="InstallUpdates">False</s:Boolean>
+    <s:Boolean x:Key="PromptToInstall">False</s:Boolean>
     <s:Boolean x:Key="ShowNotificationIcon">True</s:Boolean>
     <s:Boolean x:Key="KeepOpen">False</s:Boolean>
     <s:Int32 x:Key="LeftClickAction">2</s:Int32>

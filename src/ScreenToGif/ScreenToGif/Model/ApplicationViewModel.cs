@@ -800,6 +800,8 @@ namespace ScreenToGif.Model
 
         internal void CheckForUpdates()
         {
+            //不检测更新
+            return;
             Global.UpdateAvailable = null;
 
 #if UWP
